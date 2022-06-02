@@ -1,6 +1,6 @@
 # Abstract Data Types in C
 
-> Some basic ADT implementations in C that were created during the 2nd semester in the course<br> [Data Structures K08](https://www.di.uoa.gr/sites/default/files/undergraduate_courses_files/DIT_PPS_K08-DataStructures.pdf), DIT-UoA 2022,
+> Some basic ADT implementations in C that were created for the needs of the course<br> [Data Structures K08](https://www.di.uoa.gr/sites/default/files/undergraduate_courses_files/DIT_PPS_K08-DataStructures.pdf), DIT-UoA 2022,
 Giorgos Sofronas (sdi2100180).<br>
 
 ## Project structure
