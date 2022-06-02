@@ -36,16 +36,12 @@ static bst_node *new_bst_node(Pointer item)
 // returns NULL if not found
 static bst_node *find_node(bst_node *root_node, Pointer item, CompareFunc compare)
 {
-    if (root_node != NULL){
-        if (!compare(item, root_node->data)) return root_node; // found
-        // search in root's subtrees
-        bst_node *left = find_node(root_node->left, item, compare);
-        if (left != NULL) return left;
-        bst_node *right = find_node(root_node->right, item, compare);
-        if (right != NULL) return right; 
-    }
-    // if not found return NULL
-    return NULL;
+    if (root_node == NULL) return NULL;
+    int comp_result = compare(item, root_node->data);
+    if (!comp_result) return root_node; // found
+    // search in the appropriate root's subtree
+    if (comp_result < 0) return find_node(root_node->left, item, compare);
+    else return find_node(root_node->right, item, compare);
 }
 
 // finds the parent bst node of given item
