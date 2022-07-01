@@ -1,11 +1,11 @@
-# Abstract Data Types in C
+# Abstract Data Types in C <a href="https://opensource.org/licenses/MIT" target="_blank"><img alt="MIT License" align="right" src="https://img.shields.io/github/license/sdi2100180/Abstract-Data-Types-in-C?color=blue&style=for-the-badge"></a>
 
 > Some basic ADT implementations in C that were created for the needs of the course<br> [Data Structures K08](https://www.di.uoa.gr/sites/default/files/undergraduate_courses_files/DIT_PPS_K08-DataStructures.pdf), DIT-UoA 2022,
 Giorgos Sofronas (sdi2100180).<br>
 
-## Project structure
-   **All modules are implemented using as data-field the** [void pointer](https://www.geeksforgeeks.org/void-pointer-c-cpp/) **(void***),<br> 
-   **thus making them generic, meaning that they are applicable to any data type**, i.e. int, char*, or even whole structs. <br>
+## Project Structure
+   **All modules are implemented using as data-field the [void pointer](https://www.geeksforgeeks.org/void-pointer-c-cpp/),<br> 
+   thus making them generic, meaning that they are applicable to any data type**, i.e. int, char*, or even whole structs. <br>
     
    The user has to provide in each module's initialization appropriate functions that are used for:<br>
         - data comparison (CompareFunc)<br>
@@ -38,7 +38,7 @@ Giorgos Sofronas (sdi2100180).<br>
    Contains an example of how to use the `libADT.a` library and how to complile it with a `main.c` source file.<br>
    Run `make run` in this folder to test the example program.
 
-## Compilation and use
+## Compilation and Use
   The `example` folder contains a simple example of how the library is compiled with a C source file.<br>
   The specific compilation command for the executable file (which is included in the example folder's Makefile) is:<br>
   ```bash 
